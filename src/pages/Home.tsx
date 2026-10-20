@@ -197,7 +197,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
                     </span>
                   </div>
                   <button
-                    onClick={() => onNavigate('course-detail', { id: course.id })}
+                    onClick={() => onNavigate('course-detail', { courseId: course.id })}
                     className="bg-[#071A33] hover:bg-[#D4AF37] hover:text-[#071A33] text-white text-xs font-bold px-4 py-2.5 rounded-xl transition-all duration-300 shadow"
                   >
                     Ver Detalhes
@@ -389,7 +389,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
               </div>
 
               <button
-                onClick={() => onNavigate('course-detail', { id: course.id })}
+                onClick={() => onNavigate('course-detail', { courseId: course.id })}
                 className="w-full bg-[#071A33] hover:bg-[#D4AF37] hover:text-[#071A33] text-white font-bold py-3.5 rounded-xl transition-all duration-300 shadow-lg text-center flex items-center justify-center space-x-2"
               >
                 <span>Garantir Minha Vaga</span>
